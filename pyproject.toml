@@ -13,6 +13,7 @@ dependencies = [
     "plotly>=6.1.2",
     "scikit-learn>=1.7.0",
     "torch>=2.7.1",
+    "torchvision>=0.22.1",
     "tqdm>=4.67.1",
     "wandb>=0.20.1",
 ]
