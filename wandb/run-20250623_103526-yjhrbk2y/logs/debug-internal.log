@@ -1,0 +1,49 @@
+{"time":"2025-06-23T10:35:26.826762353-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/thiago-bittencourt/fc-projeto-final/wandb/run-20250623_103526-yjhrbk2y/logs/debug-core.log"}
+{"time":"2025-06-23T10:35:27.129161523-03:00","level":"INFO","msg":"stream: created new stream","id":"yjhrbk2y"}
+{"time":"2025-06-23T10:35:27.129258309-03:00","level":"INFO","msg":"stream: started","id":"yjhrbk2y"}
+{"time":"2025-06-23T10:35:27.12931889-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"yjhrbk2y"}
+{"time":"2025-06-23T10:35:27.12944148-03:00","level":"INFO","msg":"handler: started","stream_id":"yjhrbk2y"}
+{"time":"2025-06-23T10:35:27.129565843-03:00","level":"INFO","msg":"sender: started","stream_id":"yjhrbk2y"}
+{"time":"2025-06-23T10:35:27.397073945-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-23T10:35:27.497851236-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:35:37.645566608-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:35:37.685989673-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:35:37.68602335-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:35:37.686027052-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:35:37.686029967-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:35:37.686032415-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:35:37.686034896-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:35:37.686037192-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:35:37.686039536-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:35:37.686041808-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:35:37.686044147-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:35:37.686046323-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:35:37.925538628-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:35:37.929203866-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:36:18.810099035-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:00.832102931-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:00.835061772-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:02.67517567-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:02.679656153-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:03.482709928-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:03.484820438-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:08.658950597-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:08.699009402-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:09.396211104-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:09.399820161-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:09.56071818-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:09.562609614-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:09.633319702-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:09.64061263-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:09.715385337-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:09.723968456-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:09.792385094-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:09.794073417-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:09.894905197-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:09.904077934-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:09.985438805-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:09.989290382-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:10.516896115-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:39:10.524225728-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:39:28.173303045-03:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/tth-bitt-universidade-federal-de-santa-catarina/ottawa2023-fault-detection/yjhrbk2y/file_stream"}
+{"time":"2025-06-23T10:39:28.173416691-03:00","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/tth-bitt-universidade-federal-de-santa-catarina/ottawa2023-fault-detection/yjhrbk2y/file_stream: {\"error\":\"run ottawa2023-fault-detection/yjhrbk2y not found while streaming file\"}"}

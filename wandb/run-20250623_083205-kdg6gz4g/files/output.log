@@ -1,0 +1,61 @@
+Using device: cuda
+Epoch 1/20, Loss: 0.3945, AUROC: 0.7218
+[val] Epoch 0 - Loss: 0.6229, val_AUROC: 1.0000
+[test] Epoch 0 - Loss: 0.2690, test_AUROC: 0.7709
+Epoch 2/20, Loss: 0.2721, AUROC: 0.9212
+[val] Epoch 1 - Loss: 0.2743, val_AUROC: 0.9984
+[test] Epoch 1 - Loss: 0.3393, test_AUROC: 0.8482
+Epoch 3/20, Loss: 0.2401, AUROC: 0.9473
+[val] Epoch 2 - Loss: 0.3068, val_AUROC: 0.9897
+[test] Epoch 2 - Loss: 0.1724, test_AUROC: 0.9936
+Epoch 4/20, Loss: 0.1903, AUROC: 0.9801
+[val] Epoch 3 - Loss: 0.2211, val_AUROC: 0.9875
+[test] Epoch 3 - Loss: 0.2373, test_AUROC: 0.9382
+Epoch 5/20, Loss: 0.1411, AUROC: 0.9951
+[val] Epoch 4 - Loss: 0.3533, val_AUROC: 0.9809
+[test] Epoch 4 - Loss: 0.3097, test_AUROC: 0.6882
+Epoch 6/20, Loss: 0.1010, AUROC: 0.9994
+[val] Epoch 5 - Loss: 0.3265, val_AUROC: 0.9816
+[test] Epoch 5 - Loss: 0.3485, test_AUROC: 0.6200
+Epoch 7/20, Loss: 0.0712, AUROC: 1.0000
+[val] Epoch 6 - Loss: 0.2636, val_AUROC: 0.9522
+[test] Epoch 6 - Loss: 0.4762, test_AUROC: 0.6918
+Epoch 8/20, Loss: 0.0537, AUROC: 1.0000
+[val] Epoch 7 - Loss: 0.2976, val_AUROC: 0.9509
+[test] Epoch 7 - Loss: 0.3474, test_AUROC: 0.7282
+Epoch 9/20, Loss: 0.0498, AUROC: 1.0000
+[val] Epoch 8 - Loss: 0.3484, val_AUROC: 0.9250
+[test] Epoch 8 - Loss: 0.6415, test_AUROC: 0.2136
+Epoch 10/20, Loss: 0.0326, AUROC: 1.0000
+[val] Epoch 9 - Loss: 0.3685, val_AUROC: 0.9475
+[test] Epoch 9 - Loss: 0.4493, test_AUROC: 0.6409
+Epoch 11/20, Loss: 0.0211, AUROC: 1.0000
+[val] Epoch 10 - Loss: 0.8553, val_AUROC: 0.9816
+[test] Epoch 10 - Loss: 0.5447, test_AUROC: 0.7582
+Epoch 12/20, Loss: 0.0227, AUROC: 1.0000
+[val] Epoch 11 - Loss: 0.3253, val_AUROC: 0.9497
+[test] Epoch 11 - Loss: 0.5333, test_AUROC: 0.5973
+Epoch 13/20, Loss: 0.0128, AUROC: 1.0000
+[val] Epoch 12 - Loss: 0.4110, val_AUROC: 0.9278
+[test] Epoch 12 - Loss: 0.5989, test_AUROC: 0.5191
+Epoch 14/20, Loss: 0.0139, AUROC: 1.0000
+[val] Epoch 13 - Loss: 0.3487, val_AUROC: 0.9653
+[test] Epoch 13 - Loss: 0.3083, test_AUROC: 0.8318
+Epoch 15/20, Loss: 0.0097, AUROC: 1.0000
+[val] Epoch 14 - Loss: 0.3788, val_AUROC: 0.9453
+[test] Epoch 14 - Loss: 0.4795, test_AUROC: 0.7218
+Epoch 16/20, Loss: 0.0079, AUROC: 1.0000
+[val] Epoch 15 - Loss: 0.4180, val_AUROC: 0.9422
+[test] Epoch 15 - Loss: 0.4845, test_AUROC: 0.7382
+Epoch 17/20, Loss: 0.0067, AUROC: 1.0000
+[val] Epoch 16 - Loss: 0.5420, val_AUROC: 0.8978
+[test] Epoch 16 - Loss: 0.8979, test_AUROC: 0.2436
+Epoch 18/20, Loss: 0.0062, AUROC: 1.0000
+[val] Epoch 17 - Loss: 0.4656, val_AUROC: 0.9281
+[test] Epoch 17 - Loss: 0.6703, test_AUROC: 0.5564
+Epoch 19/20, Loss: 0.0051, AUROC: 1.0000
+[val] Epoch 18 - Loss: 0.3659, val_AUROC: 0.9500
+[test] Epoch 18 - Loss: 0.3880, test_AUROC: 0.8245
+Epoch 20/20, Loss: 0.0044, AUROC: 1.0000
+[val] Epoch 19 - Loss: 0.5283, val_AUROC: 0.9516
+[test] Epoch 19 - Loss: 0.5576, test_AUROC: 0.7073

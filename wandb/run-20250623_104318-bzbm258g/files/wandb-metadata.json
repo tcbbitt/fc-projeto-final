@@ -1,0 +1,43 @@
+{
+  "os": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.12.8",
+  "startedAt": "2025-06-23T13:43:18.481811Z",
+  "program": "/home/thiago-bittencourt/fc-projeto-final/notebooks/train_debug.ipynb",
+  "codePath": "notebooks/train_debug.ipynb",
+  "git": {
+    "remote": "https://github.com/tcbbitt/fc-projeto-final.git",
+    "commit": "bb817e230f4a9e0e1a8c7cf2e0c37de70179b97c"
+  },
+  "email": "tth.bitt@gmail.com",
+  "root": "/home/thiago-bittencourt/fc-projeto-final",
+  "host": "ml5",
+  "executable": "/home/thiago-bittencourt/fc-projeto-final/.venv/bin/python",
+  "codePathLocal": "notebooks/train_debug.ipynb",
+  "cpu_count": 16,
+  "cpu_count_logical": 24,
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1967317549056",
+      "used": "783217590272"
+    }
+  },
+  "memory": {
+    "total": "67256139776"
+  },
+  "cpu": {
+    "count": 16,
+    "countLogical": 24
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3080 Ti",
+      "memoryTotal": "12884901888",
+      "cudaCores": 10240,
+      "architecture": "Ampere",
+      "uuid": "GPU-3d2e100b-a8ba-c458-95d0-5c803da704b7"
+    }
+  ],
+  "cudaVersion": "12.4"
+}

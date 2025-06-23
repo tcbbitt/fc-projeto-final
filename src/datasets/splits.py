@@ -1,20 +1,14 @@
 import numpy as np
-import autorootcwd  
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
 def get_ottawa2023_splits(df, train_size=0.6, random_state=42):
     """
-    Split a DataFrame into training, validation, and test sets.
-    
-    This function splits the input DataFrame into three subsets: training, 
-    validation, and test. The training set size is determined by the 
-    `train_size` parameter, while the validation and test sets are split 
-    equally from the remaining data.
+    Split a DataFrame into training, validation, and test sets ensuring that 
+    each unique bearing_id appears in only one set.
     
     Parameters
     ----------
-    
     df : pandas.DataFrame
         The input DataFrame to be split.
         
@@ -28,7 +22,6 @@ def get_ottawa2023_splits(df, train_size=0.6, random_state=42):
         
     Returns
     -------
-    
     train_df : pandas.DataFrame
         The training subset of the input DataFrame.
         
@@ -38,8 +31,12 @@ def get_ottawa2023_splits(df, train_size=0.6, random_state=42):
     test_df : pandas.DataFrame
         The test subset of the input DataFrame.
     """
+    unique_ids = df['bearing_id'].unique()
+    train_ids, temp_ids = train_test_split(unique_ids, train_size=train_size, random_state=random_state)
+    val_ids, test_ids = train_test_split(temp_ids, test_size=0.5, random_state=random_state)
 
-    train_df, temp_df = train_test_split(df, train_size = train_size, random_state=random_state)
-    val_df, test_df = train_test_split(temp_df, test_size=0.5, random_state=random_state)
-    
+    train_df = df[df['bearing_id'].isin(train_ids)].copy()
+    val_df = df[df['bearing_id'].isin(val_ids)].copy()
+    test_df = df[df['bearing_id'].isin(test_ids)].copy()
+
     return train_df, val_df, test_df

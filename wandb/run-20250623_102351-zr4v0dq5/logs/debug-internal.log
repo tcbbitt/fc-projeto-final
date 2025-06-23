@@ -1,0 +1,43 @@
+{"time":"2025-06-23T10:23:51.841290232-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/thiago-bittencourt/fc-projeto-final/wandb/run-20250623_102351-zr4v0dq5/logs/debug-core.log"}
+{"time":"2025-06-23T10:23:52.151663058-03:00","level":"INFO","msg":"stream: created new stream","id":"zr4v0dq5"}
+{"time":"2025-06-23T10:23:52.151693415-03:00","level":"INFO","msg":"stream: started","id":"zr4v0dq5"}
+{"time":"2025-06-23T10:23:52.151703715-03:00","level":"INFO","msg":"sender: started","stream_id":"zr4v0dq5"}
+{"time":"2025-06-23T10:23:52.151702871-03:00","level":"INFO","msg":"handler: started","stream_id":"zr4v0dq5"}
+{"time":"2025-06-23T10:23:52.151732293-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"zr4v0dq5"}
+{"time":"2025-06-23T10:23:52.439125573-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-23T10:23:52.539924652-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:24:02.687949812-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:24:02.7289121-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:24:02.728933951-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:24:02.728937867-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:24:02.728940642-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:24:02.72894314-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:24:02.72894574-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:24:02.728948201-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:24:02.728950675-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:24:02.728952996-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:24:02.728955386-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:24:02.728957754-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:24:02.971956409-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:24:02.975469283-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:24:43.47458161-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:27:21.897274294-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:27:21.938118967-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:27:22.211590757-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:27:22.212884534-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:27:22.434431179-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:27:22.435151842-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:27:22.64578169-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:27:22.68611644-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:27:22.894414376-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:27:22.898186012-03:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2025-06-23T10:27:23.311138247-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T10:27:23.341021094-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-23T10:27:23.34106866-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-23T10:27:24.051830829-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-23T10:27:24.281415301-03:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-06-23T10:27:24.29576988-03:00","level":"INFO","msg":"stream: closing","id":"zr4v0dq5"}
+{"time":"2025-06-23T10:27:24.295785575-03:00","level":"INFO","msg":"handler: closed","stream_id":"zr4v0dq5"}
+{"time":"2025-06-23T10:27:24.295794838-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"zr4v0dq5"}
+{"time":"2025-06-23T10:27:24.295811318-03:00","level":"INFO","msg":"sender: closed","stream_id":"zr4v0dq5"}
+{"time":"2025-06-23T10:27:24.295926143-03:00","level":"INFO","msg":"stream: closed","id":"zr4v0dq5"}

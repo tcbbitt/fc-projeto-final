@@ -1,0 +1,39 @@
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.12.8
+        t:
+            "1":
+                - 1
+                - 5
+                - 41
+                - 53
+            "2":
+                - 1
+                - 5
+                - 41
+                - 53
+            "3":
+                - 2
+                - 13
+                - 16
+                - 55
+            "4": 3.12.8
+            "5": 0.20.1
+            "8":
+                - 1
+            "12": 0.20.1
+            "13": linux-x86_64
+augmentation:
+    value: time
+batch_size:
+    value: 64
+epochs:
+    value: 20
+fault_type:
+    value: inner
+learning_rate:
+    value: 0.001
+model:
+    value: DCNN08
