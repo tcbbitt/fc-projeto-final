@@ -1,0 +1,7 @@
+{"time":"2025-06-23T07:24:44.599291212-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/thiago-bittencourt/fc-projeto-final/wandb/run-20250623_072443-8esjo1mm/logs/debug-core.log"}
+{"time":"2025-06-23T07:24:44.892083239-03:00","level":"INFO","msg":"stream: created new stream","id":"8esjo1mm"}
+{"time":"2025-06-23T07:24:44.89215899-03:00","level":"INFO","msg":"stream: started","id":"8esjo1mm"}
+{"time":"2025-06-23T07:24:44.892202171-03:00","level":"INFO","msg":"handler: started","stream_id":"8esjo1mm"}
+{"time":"2025-06-23T07:24:44.892278803-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"8esjo1mm"}
+{"time":"2025-06-23T07:24:44.892284299-03:00","level":"INFO","msg":"sender: started","stream_id":"8esjo1mm"}
+{"time":"2025-06-23T07:24:45.165124104-03:00","level":"INFO","msg":"Starting system monitor"}

@@ -1,0 +1,17 @@
+{"time":"2025-06-23T06:12:41.132811315-03:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/home/thiago-bittencourt/fc-projeto-final/wandb/run-20250623_061240-q1ecniog/logs/debug-core.log"}
+{"time":"2025-06-23T06:12:41.452642835-03:00","level":"INFO","msg":"stream: created new stream","id":"q1ecniog"}
+{"time":"2025-06-23T06:12:41.452765317-03:00","level":"INFO","msg":"stream: started","id":"q1ecniog"}
+{"time":"2025-06-23T06:12:41.453208032-03:00","level":"INFO","msg":"handler: started","stream_id":"q1ecniog"}
+{"time":"2025-06-23T06:12:41.45399627-03:00","level":"INFO","msg":"sender: started","stream_id":"q1ecniog"}
+{"time":"2025-06-23T06:12:41.453903396-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"q1ecniog"}
+{"time":"2025-06-23T06:12:41.706410762-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-23T06:16:29.300852211-03:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2025-06-23T06:16:29.342318188-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-23T06:16:29.342347362-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-23T06:16:30.209351304-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-23T06:16:30.345849316-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":0.136426464}],"total_operations":1}}
+{"time":"2025-06-23T06:16:30.448091-03:00","level":"INFO","msg":"stream: closing","id":"q1ecniog"}
+{"time":"2025-06-23T06:16:30.448123579-03:00","level":"INFO","msg":"handler: closed","stream_id":"q1ecniog"}
+{"time":"2025-06-23T06:16:30.448138779-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"q1ecniog"}
+{"time":"2025-06-23T06:16:30.448183887-03:00","level":"INFO","msg":"sender: closed","stream_id":"q1ecniog"}
+{"time":"2025-06-23T06:16:30.448268264-03:00","level":"INFO","msg":"stream: closed","id":"q1ecniog"}

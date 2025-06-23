@@ -5,7 +5,7 @@ class ToTensor:
     """Convert numpy arrays in sample to PyTorch tensors."""
     def __call__(self, sample):
         waveform, label = sample
-        waveform = torch.tensor(waveform, dtype=torch.float32)
+        waveform = torch.tensor(waveform, dtype=torch.float32).unsqueeze(0)
         label = torch.tensor(label, dtype=torch.float32)
         return waveform, label
 
