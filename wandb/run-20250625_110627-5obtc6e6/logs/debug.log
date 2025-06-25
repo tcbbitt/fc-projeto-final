@@ -1,0 +1,5 @@
+2025-06-25 11:06:27,373 INFO    MainThread:281514 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /home/thiago-bittencourt/fc-projeto-final/wandb/run-20250625_110627-5obtc6e6/logs/debug.log
+2025-06-25 11:06:27,373 INFO    MainThread:281514 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /home/thiago-bittencourt/fc-projeto-final/wandb/run-20250625_110627-5obtc6e6/logs/debug-internal.log
+2025-06-25 11:06:27,373 INFO    MainThread:281514 [wandb_init.py:init():831] calling init triggers
+2025-06-25 11:06:27,373 INFO    MainThread:281514 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'batch_size': 32, 'epochs': 4, 'learning_rate': 0.001, 'model': 'DCNN08', 'fault_type': 'outer', 'augmentation': 'fft', 'seed': 258, 'multiplyby': 20, '_wandb': {}}

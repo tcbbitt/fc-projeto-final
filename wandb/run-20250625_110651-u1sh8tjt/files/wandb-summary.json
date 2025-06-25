@@ -1,0 +1,1 @@
+{"train_auroc":0.997249609375,"_timestamp":1.750860439894369e+09,"test_auroc":0.3462499999999999,"_step":11,"test_loss":1.3799834251403809,"epoch":3,"val_loss":0.0917115556076169,"val_auroc":1,"train_loss":0.057057958990335465,"_runtime":0.994536511,"_wandb":{"runtime":210}}

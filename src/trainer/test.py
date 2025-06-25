@@ -38,7 +38,7 @@ def test(dataloader, model, loss_fn, device, epoch, val_or_test='val'):
             pred = model(X)
             loss = loss_fn(pred, y)
             test_loss += loss.item()
-            all_preds.extend(pred.cpu().numpy())
+            all_preds.extend(torch.sigmoid(pred).cpu().numpy())
             all_labels.extend(y.cpu().numpy())
 
     avg_loss = test_loss / num_batches
