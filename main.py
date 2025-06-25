@@ -1,9 +1,10 @@
 import autorootcwd
 import torch
 import torch.nn as nn
-from torchvision import transforms
 import pandas as pd
 import numpy as np
+from torchvision import transforms
+from torch.utils.tensorboard import SummaryWriter
 from torch.utils.data import DataLoader
 from src.datasets.splits import get_ottawa2023_splits
 from src.datasets.ottawa2023 import Ottawa2023Dataset
@@ -19,14 +20,15 @@ def main():
     # --- Configs ---
     SEED = 42
     BATCH_SIZE = 64
-    EPOCHS = 20
-    FAULT_TYPE = "cage"
+    EPOCHS = 1
+    FAULT_TYPE = "outer"
     SAMPLE_LENGTH = 1.0 #in seconds
-    REPEATS = 10
+    REPEATS = 20
     LEARNING_RATE = 1e-3
+    MODEL = 'DCNN19'
     AUGMENTATION = 'normalized-fft'
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    
+        
     # DICT OF AUGMENTATIONS
     augmentation = { 'fft-RG': [FFT(), RandomGain(seed=SEED), ToTensor()],
                         'fft': [FFT(), ToTensor()],
@@ -38,15 +40,18 @@ def main():
     train_transform = transforms.Compose(augmentation[AUGMENTATION])
     val_test_transform = transforms.Compose(augmentation[AUGMENTATION])     
     wandb.login()
+    # --- Initialize Weights & Biases ---
     wandb.init(project="ottawa2023-fault-detection", 
-           name=f"DCNN08_{FAULT_TYPE}_{AUGMENTATION}_bs{BATCH_SIZE}_lr{LEARNING_RATE}_{EPOCHS}epochs",
-           config={
-    "batch_size": BATCH_SIZE,
-    "epochs": EPOCHS,
-    "learning_rate": LEARNING_RATE,
-    "model": "DCNN08",
-    "fault_type": FAULT_TYPE,
-    "augmentation": AUGMENTATION,
+            name=f"{MODEL}_{FAULT_TYPE}_{AUGMENTATION}_mby{REPEATS}_bs{BATCH_SIZE}_lr{LEARNING_RATE}_epochs{EPOCHS}_seed{SEED}",
+            config={
+        "batch_size": BATCH_SIZE,
+        "epochs": EPOCHS,
+        "learning_rate": LEARNING_RATE,
+        "model": MODEL,
+        "fault_type": FAULT_TYPE,
+        "augmentation": AUGMENTATION,
+        'seed': SEED,
+        'multiplyby': REPEATS,
     })
     #load data
     full_df = pd.read_pickle('/data/bearing_datasets/ottawa/processed/full_dataset.bz2')
@@ -63,9 +68,15 @@ def main():
     # --- check device ---
     print(f"Using device: {DEVICE}")
     # --- Model, Loss, Optimizer ---
-    model = Net("DCNN08", in_channels=1, n_class=1).to(DEVICE)
+    model = Net(f'{MODEL}', in_channels=1, n_class=1).to(DEVICE)
     loss_BCE = nn.BCEWithLogitsLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
+    # --- Initialize TensorBoard ---
+    writer = SummaryWriter(f'runs/{MODEL}_{FAULT_TYPE}_{AUGMENTATION}_mby{REPEATS}_bs{BATCH_SIZE}_lr{LEARNING_RATE}_epochs{EPOCHS}_seed{SEED}')
+    waveform, label = train_dataset[0]
+    #show model using summary writer
+    writer.add_graph(model,waveform.unsqueeze(0).to(DEVICE)) 
+    writer.close()
     # --- Train and Test Loop ---
     for epoch in range(EPOCHS):
         train_loss, auroc = train(dataloader = train_loader, model = model, loss_fn = loss_BCE, optimizer = optimizer, device = DEVICE, epoch=epoch)
