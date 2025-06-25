@@ -13,11 +13,11 @@ Conforme a documentação do Pytorch, recomenda-se criar uma classe para cada po
 #### Wrapper
 - Como o dataset é relativamente pequeno, no treinamento pode-se aumentar artificialmente o tamanho do dataset passando o mesmo sinal N vezes (hiperparâmetro), porém como o começo do trecho de 1s é aleatorizado a cada chamada, aumenta-se a diversidade no treino.
 #### Dataloaders
-- Definiu-se uma função auxiliar de modo que os dataloader pudessem ser chamados de maneira mais modular.
+- Definiu-se uma função auxiliar de modo que os dataloaders pudessem ser chamados de maneira mais modular.
 
 ### Models
 - Nesse trabalho não foram desenvolvidas arquiteturas, mas sim utilizou-se de uma arquitetura reconhecida na identificação de falhas a partir de sinais de vibração. a rede utilizada 'DCNN for one-dimensional signals in Pytorch' (disponível em:https://github.com/redone17/deep-sensor/tree/master) é uma rede convolucional 1D. É possível alterar o nível de complexidade da rede a partir do parâmetro DCNNXX. Nesse trabalho foram testadas a rede DCNN08(mais simples) e a DCNN19 (mais complexa disponível).
-- Apesar do dataset ser multirótulo (4 falhas), esse trabalho limita-se a criação de classificadores binários para cada tipo de falha (identifica se existe a falha X) dada a complexidade do caso multirótulo ou multiclasse. A perda é a BCEWithLogitsLoss com otimizador Adam. Como métrica de avaliação, como no caso binário o conjunto é desbalanceado, escolhe-se a AUROC.
+- Apesar do dataset ser multiclasse(4 falhas), esse trabalho limita-se a criação de classificadores binários para cada tipo de falha (identifica se existe a falha X) dada a complexidade do caso multirótulo ou multiclasse. A perda é a BCEWithLogitsLoss com otimizador Adam. Como métrica de avaliação, como no caso binário o conjunto é desbalanceado, escolhe-se a AUROC.
 
 ### Trainer
 - Foram definidas as funções para treino e validação/teste para serem usadas no loop de treinamento e avaliação
