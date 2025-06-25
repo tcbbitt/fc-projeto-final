@@ -98,3 +98,69 @@ Traceback (most recent call last):
 wandb.sdk.interface.router.MessageRouterClosedError
 2025-06-25 11:23:39,025 INFO    MsgRouterThr:299367 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
 2025-06-25 11:23:39,235 INFO    MainThread:299367 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-25 11:34:45,868 INFO    MainThread:299367 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-25 11:34:45,868 INFO    MainThread:299367 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-25 11:34:45,936 INFO    MainThread:299367 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-25 11:34:46,096 INFO    MainThread:299367 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-25 11:34:46,096 INFO    MainThread:299367 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-25 11:34:46,117 INFO    MainThread:299367 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-25 11:34:46,311 INFO    MainThread:299367 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-25 11:34:46,311 INFO    MainThread:299367 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-25 11:34:46,331 INFO    MainThread:299367 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-25 11:34:46,496 INFO    MainThread:299367 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-25 11:34:46,496 INFO    MainThread:299367 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-25 11:34:46,515 INFO    MainThread:299367 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-25 11:34:46,704 INFO    MainThread:299367 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-25 11:34:46,705 INFO    MainThread:299367 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-25 11:34:46,725 INFO    MainThread:299367 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-25 11:34:46,902 INFO    MainThread:299367 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-25 11:34:46,903 INFO    MainThread:299367 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-25 11:34:46,928 INFO    MainThread:299367 [wandb_run.py:_finish():2219] finishing run tth-bitt-universidade-federal-de-santa-catarina/ottawa2023-fault-detection/hzd7fvi7
+2025-06-25 11:34:46,929 ERROR   MainThread:299367 [wandb_init.py:init():1619] [no run ID] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 1609, in init
+    return wi.init(run_settings, run_config, run_printer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_init.py", line 852, in init
+    self._wl.finish_all_active_runs()
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_setup.py", line 163, in finish_all_active_runs
+    run.finish()
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 436, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2207, in finish
+    return self._finish(exit_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 2220, in _finish
+    with telemetry.context(run=self) as tel:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 759, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/wandb_run.py", line 772, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface_shared.py", line 60, in _publish_telemetry
+    self._publish(rec)
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/interface/interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 174, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/thiago-bittencourt/fc-projeto-final/.venv/lib/python3.12/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+           ^^^^^^^^^^^^^^^^^^^^^
+BrokenPipeError: [Errno 32] Broken pipe
+2025-06-25 11:34:47,127 INFO    MainThread:299367 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-06-25 11:34:47,662 INFO    MainThread:299367 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-06-25 11:34:47,662 INFO    MainThread:299367 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-06-25 11:34:47,684 INFO    MainThread:299367 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
