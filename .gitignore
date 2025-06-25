@@ -9,7 +9,7 @@ wheels/
 # Virtual environments
 .venv
 # wandb runs
-wandb/
+wandb
 #tensorboard logs
 runs/
 
